@@ -84,6 +84,9 @@ When building Atom from source, the `apm` command is not added to the system pat
 
 * Other `node-gyp` errors on first build attempt, even though the right Node.js and Python versions are installed.
   * Do try the build command one more time as experience shows it often works on second try in many cases.
+  
+ * `PathTooLongException`  This seems to be an issue with squirrel.  Create a directory, "c:\squirreltemp" and then create a system environment variable called "SQUIRREL_TEMP" and assign it the value "c:\squirreltemp".
+  
 
 ### Windows build error reports in atom/atom
 * If all fails, use [this search](https://github.com/atom/atom/search?q=label%3Abuild-error+label%3Awindows&type=Issues) to get a list of reports about build errors on Windows, and see if yours has already been reported.
